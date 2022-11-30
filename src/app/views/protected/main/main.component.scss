@@ -1,0 +1,14 @@
+:host {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  height: 100vh;
+}
+
+app-side-menu {
+  width: 16.6666%;
+}
+
+app-site-content {
+  width: 83.3334%;
+}

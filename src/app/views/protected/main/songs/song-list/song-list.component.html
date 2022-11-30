@@ -1,0 +1,9 @@
+<div class="row" *ngIf="songs">
+  <div class="col-12">
+    <app-song-item
+      *ngFor="let song of songs"
+      [song]="song"
+      (selected)="playerService.loadAndPlay($event)"
+    ></app-song-item>
+  </div>
+</div>

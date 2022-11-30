@@ -1,0 +1,3 @@
+<input type="search" [(ngModel)]="keywords" (ngModelChange)="search($event)">
+<p *ngIf="keywords!=''">Searching: {{keywords}}</p>
+<app-song-list [songs]="results" class="search-list"></app-song-list>

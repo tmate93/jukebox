@@ -1,0 +1,16 @@
+<div class="jukebox">
+  <div class="music-player-status" [ngSwitch]="playerService.status$ | async">
+    <span *ngSwitchCase="'ended'">Stopped</span>
+    <span *ngSwitchCase="'playing'">Playing</span>
+    <span *ngSwitchCase="'loading'">Loading</span>
+    <span *ngSwitchCase="'error'">Doh, error</span>
+    <span *ngSwitchCase="'paused'">Paused</span>
+  </div>
+  <div class="music-player-control-container">
+    <button (click)="playerService.toggle()" class="music-player-control col-md-2 col-lg-2 justify-content-center">
+      <img src="assets/images/play_icon_invert.png" *ngIf="(playerService.status$ | async) != 'playing'" class="control-icon">
+      <img src="assets/images/pause_icon_invert.png" *ngIf="(playerService.status$ | async) === 'playing'" class="control-icon">
+    </button>
+    <input type="range" step="0.01" min="0" max="1" [(ngModel)]="playerService.volume" class="music-player-control col-md-2 col-lg-3">
+  </div>
+</div>

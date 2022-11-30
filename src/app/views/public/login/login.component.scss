@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background-color: white;
+  background-image: url(../../../../assets/images/loginpage_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.row {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  form {
+    border: 1px solid gray;
+    border-radius: 6px;
+    box-shadow: gray 0 0 10px;
+    text-align: center;
+    padding: 1rem;
+    background-image: url(../../../../assets/images/loginbox_bg.png);
+
+    input {
+      width: 100%;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    button {
+      margin-top: 0.2rem;
+      border: 2px solid gray;
+      border-radius: 6px;
+      background: rgba(199, 155, 248, 1);
+    }
+  }
+
+  &.page-switch-link {
+    margin-top: 1rem;
+  }
+
+  &.page-title {
+    margin-bottom: 1rem;
+  }
+}

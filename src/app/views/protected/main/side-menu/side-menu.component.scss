@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  padding: 1rem;
+  background-color: black;
+  background-image: url(../../../../../assets/images/menu_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #0f5132;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  ul {
+    margin-top: 10rem;
+    color: white;
+    list-style: none;
+
+    li {
+      padding-bottom: 0.5rem;
+
+      button {
+        border: 1px solid gray;
+        border-radius: 6px;
+        background: rgba(199, 155, 248, 1);
+      }
+    }
+  }
+}

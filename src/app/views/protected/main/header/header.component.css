@@ -1,0 +1,25 @@
+:host {
+  padding: 0;
+}
+
+.container-fluid {
+  background-color: grey;
+  height: 4rem;
+  display: grid;
+  align-items: center;
+}
+.container-fluid .row {
+  justify-content: end;
+}
+.container-fluid .row div {
+  align-items: center;
+  display: flex;
+}
+.container-fluid .row div p {
+  margin-bottom: 0;
+}
+.container-fluid .row div img {
+  height: 100%;
+}
+
+/*# sourceMappingURL=header.component.css.map */

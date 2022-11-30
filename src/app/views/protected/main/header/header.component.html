@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-2">
+      <p *ngIf="(currentUser)">Kredit: {{currentUser.kredit}}</p>
+      <p *ngIf="(!currentUser)">Error</p>
+    </div>
+    <div class="col-3">
+      <div class="user-img">
+        <img src="assets/images/user.png">
+      </div>
+      <p *ngIf="(currentUser)">{{currentUser.lastName + " " + currentUser.firstName}}</p>
+      <p *ngIf="(!currentUser)">Error</p>
+    </div>
+  </div>
+</div>

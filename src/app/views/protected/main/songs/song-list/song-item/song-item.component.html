@@ -1,0 +1,10 @@
+<a (click)="onClick()" class="list-group-item clearfix">
+  <span class="pull-left">
+    <img [src]="song.songThumbnailPath" class="img-responsive">
+  </span>
+  <div class="pull-right">
+    <h4 class="list-group-item-heading">{{ song.name }}</h4>
+    <p class="list-group-item-text">{{ song.artist }}</p>
+    <p *ngIf="song.favourite">Favourite</p>
+  </div>
+</a>

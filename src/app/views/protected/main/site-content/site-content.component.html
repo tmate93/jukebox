@@ -1,0 +1,7 @@
+<app-header></app-header>
+<main>
+  <app-jukebox *ngIf="activePage === 'main'"></app-jukebox>
+  <app-search *ngIf="activePage === 'search'"></app-search>
+  <app-favourites *ngIf="activePage === 'favourite'"></app-favourites>
+  <app-history *ngIf="activePage === 'history'"></app-history>
+</main>

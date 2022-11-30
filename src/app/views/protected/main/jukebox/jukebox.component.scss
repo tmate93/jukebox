@@ -1,0 +1,47 @@
+:host {
+  display: block;
+}
+
+.jukebox {
+  padding-top: 190%;
+  position: relative;
+  background-image: url(../../../../../assets/images/jukebox_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.music-player-status {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.music-player-control-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 33%;
+  width: 100%;
+
+  .music-player-control, button {
+    background: none;
+    border: none;
+  }
+
+  input {
+    margin-right: 1rem;
+  }
+
+  .music-player-control {
+    align-items: center;
+
+    .control-icon {
+      //margin: 1rem;
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

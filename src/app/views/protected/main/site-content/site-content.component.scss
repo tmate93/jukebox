@@ -1,0 +1,38 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  background-color: white;
+  background-image: url(../../../../../assets/images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+app-header {
+  flex: none;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  width: 100%;
+}
+
+app-jukebox {
+  width: 25%;
+}
+
+footer {
+  flex: none;
+}
+
+.btn {
+  margin: 1rem;
+  width: auto;
+}
