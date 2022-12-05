@@ -18,3 +18,11 @@ Full-size HDMI
 Single USB 2.0 ports  
 4-pole stereo output and composite video port  
 Micro SD port (12GB SD kártyával)  
+  
+Adatbázis: MariaDB, melyet a phpMyAdmin 5.2.0 segítségével lehet konfigurálni.
+A holnap az Angular keretrendszerben készült.
+ 
+Felhasználás:
+A gyakorlatban a Jukebox használatához a Raspberry-t egy kijelzöre kell kötni, melyet a klasszikus egér+billentyüzet kombóval lehet manipulálni. A hangrendszer a sztereó kimenetre van kötve. Ez a felállítás egy költséghatékony megoldást jelenthet a drága, robosztus Jukebox gépekhez képest, melyek drágák és nagy helyet foglalnak el. A felhasznól egy terminálok keresztül tudnak kártyás fizetéssel token-eket vásárolni, melyekkel számokat tudnak lejátszani. Ez a projekt jelen formájában mint proof-of-concept nem használ kártyás terminált, a kreditvásárlás jelenleg a bejelentkezés utáni fö oldalon található + gombbal van szimulálva.  
+Az adminisztrátor a phpMyAdmin segítségével tudja az adatbázist kezelni, amely tárolja a bejelentkezési név, jelszó mellett a kreditek számát is.  
+A zeneszámokat a jukebox/src/assets/music/ mappa tartalmazza, ha új számot kívánunk hozzáadni vagy egyet eltávolítani, úgy azt ezen mappa összeállításával lehet kivitelezni.  
